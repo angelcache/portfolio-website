@@ -1,0 +1,129 @@
+@import url('colors.css');
+
+.header {
+    display: flex;
+    position: fixed;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 100px;
+    padding: 10px 20px 10px 20px;
+    border-bottom: solid;
+    border-color:var(--grey-highlight);
+    border-bottom-width: 3px;
+    z-index: 100;
+}
+
+.header-content {
+    width: 800px;
+    align-items: center;
+}
+
+.vertical-flex {
+    display: flex;
+}
+
+.star-menu {
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.star {
+    width: 120px;
+    cursor: pointer;
+    position: absolute;
+    top: -20px;
+    left: -20px;
+}
+
+.star-items {
+    display: flex;
+    background-color: #FFF6B7;
+    margin-left: 35px;
+    width: 350px;
+    height: 60px;
+    border-radius: 20px;
+    border: solid;
+    border-width: 2.4px;
+    border-color: var(--star-outline);
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.star-items .vertical-line {
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 2.4px;
+    height: 60px;
+    background-color: var(--star-outline);
+}
+
+.sun-icon {
+    margin-left: 45px;
+    margin-right: 10px;
+    height: 40px;
+}
+
+.speaker-icon {
+    margin-left: 15px;
+    margin-right: 15px;
+    height: 40px;
+    width: 35px;
+    height: 35px;
+}
+
+.linkedin-icon{
+    margin-left: 15px;
+    margin-right: 15px;
+    height: 40px;
+    width: 34px;
+    height: 34px;
+    margin-bottom: 4px;
+}
+
+.github-icon {
+    margin-left: 15px;
+    margin-right: 15px;
+    width: 38px;
+    height: 38px;
+}
+
+.right-menu {
+    display: flex;
+    align-items: center;
+}
+
+.home-header {
+    font-size: 30px;
+    padding-right: 30px;
+    padding-left: 30px;
+    color: var(--black-text-color);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.projects-header {
+    font-size: 30px;
+    padding-right: 30px;
+    color: var(--black-text-color);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.connect-button {
+    color: white;
+    font-family: Roboto;
+    background: linear-gradient(to right, var(--button-bg-color), var(--button-bg-color2));
+    color: white;
+    border: 2.4px solid var(--button-outline);
+    border-radius: 20px;
+    font-size: 20px;
+    padding: 20px 40px 20px 40px;
+    border-radius: 30px;
+    white-space: nowrap;
+    text-decoration: none;
+}

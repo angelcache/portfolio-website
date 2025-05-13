@@ -1,0 +1,150 @@
+.projects-section {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    background-color: white;
+    background-image: 
+    linear-gradient(to right, #ddd 1px, transparent 1px),
+    linear-gradient(to bottom, #ddd 1px, transparent 1px);
+    background-size: 60px 60px; /* adjust for bigger/smaller grid squares */
+    align-items: center;
+    scroll-margin-top: 100px;
+}
+
+.experience-content {
+    width: 1400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.experiences-text {
+    margin-top: 19px;
+    margin-left: 10px;
+    font-size: 70px;
+    font-style: italic;
+    font-family: Lobster Two;
+    padding-bottom: 41px;
+}
+
+.exp-buttons {
+    display: flex;
+    justify-content: center;
+    width: clamp(100px, 80vw, 800px);
+    height: 60px;
+    background: linear-gradient(to right, var(--button-bg-color), var(--button-bg-color2));
+    border-radius: 24px;
+    border: 2.4px solid var(--button-outline);
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.projects-button,
+.clubs-button,
+.cert-button {
+    cursor: pointer;
+    background: none;
+    width: 270px;
+    border-radius: 0px;
+    border: none;
+    font-size: 20px;
+    min-width: 270x;
+}
+
+.exp-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 60px;
+    padding-top: 60px;
+}
+
+.star-menu2 {
+    display: flex;
+    position: relative;
+    margin-right: 40px;
+    padding-top: 120px;
+    align-self: flex-end;
+}
+
+.star2 {
+    width: 120px;
+    cursor: pointer;
+    position: absolute;
+    top: 98px;
+    bottom: 1;
+    right: -46px;
+    transform: translate(-0, -0);
+    z-index: 10;
+}
+
+.star-items2 {
+    display: flex;
+    background-color: #FFF6B7;
+    width: 380px;
+    height: 60px;
+    border-radius: 20px;
+    border: 2.4px solid var(--star-outline);
+    align-items: center;
+}
+
+.star-items2 .vertical-line {
+    margin-left: 5px;
+    margin-right: 20px;
+    width: 2px;
+    height: 60px;
+    background-color: var(--star-outline);
+    flex-shrink: 0;
+}
+
+.project-boxes {
+    width: 340px;
+    height: 340px;
+    padding: 20px;
+    object-fit: contain;
+    background-color: var(--grey-highlight);
+    border-radius: 24px;
+}
+
+.toggle-on {
+  color: var(--black-text-color);
+}
+
+.skills-title {
+    font-weight: bold;
+    color: var(--bg-color);
+    font-size: 20px;
+    padding-left: 24px;
+    padding-right: 10px;
+}
+
+.skills-text {
+    font-size: 16px;
+    color: var(--bg-color);
+    white-space: nowrap;
+}
+
+.exp-buttons .vertical-line,
+.vertical-line2 {
+    width: 2.4px;
+    height: 64px;
+    background-color: var(--button-outline);
+}
+
+.box-design {
+    position: relative;
+}
+
+.blue-star {
+    width: 80px;
+    position: absolute;
+    top: -40px;
+    right: -30px;
+}
+
+.pink-heart {
+    width: 70px;
+    position: absolute;
+    bottom: -40px;
+    left: -30px;
+}

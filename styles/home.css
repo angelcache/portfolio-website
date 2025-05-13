@@ -1,0 +1,65 @@
+.home-page {
+    display: flex;
+    justify-content: center;
+    gap: clamp(100px, 30vw, 150px);
+    padding-right: 40px;
+    height: 700px;
+    padding: 2rem;
+    align-items:center;
+    padding-bottom: 4rem;
+    scroll-margin-top: 100px;
+}
+
+.sticky-tab {
+    position: absolute;
+    width: 220px;
+    height: 40px;
+    background-color: var(--tab-color);
+    border: 2.4px solid var(--star-outline);
+    border-radius: 6px;
+    top: -15px;
+}
+
+.sticky-note {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: clamp(100px, 40vw, 600px);
+    height: clamp(40px, 60vh, 500px);
+    padding: 1rem;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.10);
+    word-break: break-word;
+    overflow-wrap: break-word;
+}
+
+.intro-text {
+    padding-top: 60px;
+    font-size: 40px;
+    padding-bottom: 20px;
+}
+
+.dynamic-text {
+    color: var(--button-bg-color);
+}
+
+.info-text {
+    font-size: clamp(16px, 3vw, 22px);
+    color: gray;
+    padding: 10px 30px 60px 30px;
+    overflow-y: auto;
+}
+
+.home-image {
+    width: clamp(100px, 30vw, 500px);
+    border-radius: 40px;
+    border: solid;
+    border-color: white;
+}
+
+.gif-credits {
+    font-size: 16px;
+    color: white;
+}

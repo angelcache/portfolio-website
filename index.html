@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Angela | Portfolio Website </title>
+
+    <!-- CSS styles -->
+    <link rel="stylesheet" href="styles/color.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/experience.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/contact.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header-content">
+        <!-- Star Menu: clickable star icon with a settings menu -->
+        <div class="star-menu">
+          <img onclick="openStarMenu()" class="js-star star" src="img/star-logo.png">
+          <div class="star-items">
+            <img class="sun-icon" src="img/sun-icon.png">
+            <div class="vertical-line"></div>
+            <img class="speaker-icon" src="img/speaker-icon.png">
+            <div class="vertical-line"></div>
+            <img class="linkedin-icon" src="img/linkedin-icon.png">
+            <div class="vertical-line"></div>
+            <img class="github-icon" src="img/github-icon.png">
+          </div>
+          </div>
+        </div>
+
+        <!-- Right Menu: clickable headers that lead to different sections -->
+        <div class="right-menu">
+          <h1 >
+            <a class="home-header" href="#home">Home</a>
+          </h1>
+          <h1>
+            <a class="projects-header" href="#projects">
+              Experience
+            </a>
+          </h1>
+          <a class="connect-button" href="#contact">Let's Talk!</a>
+        </div>
+      </div>
+    </header>
+
+    <section id="home" class="home-page">
+
+      <!-- Sticky Note: contains info about me -->
+      <div class="sticky-note">
+        <div class="sticky-tab"></div>
+
+        <p class="intro-text">
+          Hi I'm <strong class="dynamic-text">Angela Dakay !</strong>
+        </p>
+
+        <p class="info-text">
+          I am currently a computing science student at the University of Alberta. I am interested in software 
+          development and cybersecurity.
+          Previously, I was a teaching assistant for the course CMPUT 204 (Algorithms I). I am actively
+          seeking out exciting opportunities in the tech field.
+        </p>
+      </div>
+
+      <div>
+        <img class="home-image" src="img/home-gif.gif">
+        <p class="gif-credits">
+          GIF by 
+          <a href="https://giphy.com/fomoduck" target="_blank" rel="noopener noreferrer">@fomoduck</a>
+        </p>
+      </div>
+
+    </section>
+
+    <section id="projects" class="projects-section">
+      <div class="experience-content">
+        <h1 class="experiences-text">Experiences</h1>
+
+        <!-- Experience buttons: clickable buttons to projects, club activities and certificates -->
+        <div class="exp-buttons-container">
+          <div class="exp-buttons">
+            <button onclick="changeContent(this, 'project')" class="js-project-button projects-button toggle-on">
+              Projects
+            </button>
+
+            <div class="vertical-line"></div>
+            <button onclick="changeContent(this, 'activities')" class="js-club-button  clubs-button">
+              Activities
+            </button>
+
+            <div class="vertical-line2"></div>
+            <button onclick="changeContent(this, 'cert')" class="js-cert-button  cert-button">
+              Certificates
+            </button>
+          </div>
+        </div>
+
+        <div class="exp-images">
+
+          <div class="box-design">
+            <img class="pink-heart" src="img/pink-heart.png">
+            <img class="js-box-1 project-boxes" src="img/project1-img.png" alt="empty">
+          </div>
+
+          <img class="js-box-2 project-boxes" src="img/project2-img.png" alt="empty">
+
+          <div class="box-design">
+            <img class="blue-star" src="img/blue-star.png">
+            <img class="js-box-3 project-boxes" src="img/project3-img.png">
+          </div>
+
+        </div>
+
+        <div class="star-menu2">
+          <!-- Star Menu 2: clickable star icon that shows my skills -->
+          <div class="star-items2">
+            <p class="skills-title">Skills:</p>
+            <div class="vertical-line"></div>
+            <p class="skills-text">PYTHON, JAVA, HTML, CSS..</p>
+          </div>
+          <img class="star2" src="img/star-logo2.png">
+        </div>
+      </div>
+
+    </section>
+
+    <section id="contact" class="contact-section">
+      <div class="contact-box">
+        <div class="message-tab">
+          <p class="connect-title">Want to <span class="connect-highlight">Connect?</span></p>
+        </div>
+        <div class="contact-descr">
+          <p class="contact-text">
+            Hi! Thanks for visiting my website, if you'd like to connect
+            feel free to reach out :D
+          </p>
+          <div class="contact-buttons">
+            <img class="linkedin" src="img/linkedin-icon.png" alt="empty">
+            <div class="vertical-line"></div>
+            <img class="github" src="img/github-icon.png" alt="empty">
+            <div class="vertical-line"></div>
+            <img class="resume" src="img/resume-icon.png" alt="empty">
+            <div class="vertical-line"></div>
+            <img class="code" src="img/code-icon.png" alt="empty">
+          </div>
+        </div>
+
+        <div class="contact-form">
+          <input class="name" placeholder="Name">
+          <input class="email" placeholder="Email">
+          <textarea wrap="soft" class="description" placeholder="Description"></textarea>
+
+          <button class="submit-button">
+            Submit
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p class="footer-note">&copy; 2025 &nbsp <a href="#home" class="footer-text">Angela Dakay</a> </p>
+    </footer>
+    
+    <script src="scripts/portfolio.js"></script>
+  </body>
+</html>
