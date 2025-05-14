@@ -32,15 +32,15 @@ function changeContent(button, experience) {
   for (i = 1; i <= 3; i++) {
     expImages.innerHTML = `
     <div class="box-design">
-      <img class="pink-heart" src="img/pink-heart.png">
-      <img class="js-box-1 project-boxes" src="img/${experience}1-img.png" alt="empty">
+      <img class="pink-heart" src="img/deco/pink-heart.png">
+      <img class="js-box-1 project-boxes" src="img/experiences/${experience}1-img.png" alt="empty">
     </div>
 
-    <img class="js-box-2 project-boxes" src="img/${experience}2-img.png" alt="empty">
+    <img class="js-box-2 project-boxes" src="img/experiences/${experience}2-img.png" alt="empty">
 
     <div class="box-design">
-      <img class="blue-star" src="img/blue-star.png">
-      <img class="js-box-3 project-boxes" src="img/${experience}3-img.png">
+      <img class="blue-star" src="img/deco/blue-star.png">
+      <img class="js-box-3 project-boxes" src="img/experiences/${experience}3-img.png">
     </div>`
   }
 }
@@ -51,6 +51,24 @@ function changeContent(button, experience) {
 
 // we would use the transition funcitonality to ensure a smooth change
 
-function openStarMenu() {
-  starButton = document.querySelector('.js-star-items');
+function openStarMenu(star) {
+  const starMenu = document.querySelector(`.js-star-items${star}`); // accounts for the two star menu buttons
+  console.log(`.js-star-items${star}`)
+
+  console.log(starMenu.style.width);
+
+  if (starMenu.style.width !== "350px") {
+    starMenu.style.width= "350px";
+    starMenu.style.borderColor = "var(--star-outline)";
+    starMenu.style.backgroundColor = "var(--star-bg-color)";
+  } else {
+    starMenu.style.width= "0";
+    starMenu.style.borderColor= "transparent";
+    starMenu.style.backgroundColor = "white";
+  }
+
+  //350
+  //2.5
+  //border-color: var(--star-outline);
+  
 }

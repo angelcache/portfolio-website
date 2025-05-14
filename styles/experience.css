@@ -80,12 +80,14 @@
 
 .star-items2 {
     display: flex;
-    background-color: #FFF6B7;
-    width: 380px;
+    background-color: transparent;
+    width: 0px;
     height: 60px;
     border-radius: 20px;
-    border: 2.4px solid var(--star-outline);
+    border: 2.4px solid transparent;
     align-items: center;
+    transition: 0.15s;
+    overflow: hidden;
 }
 
 .star-items2 .vertical-line {
