@@ -3,6 +3,7 @@
 html {
   scroll-behavior: smooth;
 }
+
 body {
     display: flex;
     flex-direction: column;
@@ -43,4 +44,8 @@ button {
     width: 100vw;
     height: 820px;
     padding: 2rem;
+}
+
+body, body * {
+  transition: background-color 0.3s ease, color 0.3s ease;
 }

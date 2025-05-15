@@ -1,12 +1,50 @@
 :root {
+    --header-color: white;
+    --header-line: #EAEAEA;
+    --tab-color: #FFFD89;
+    --tab-outline: #EBCA50;
+    --sticky-note-color: white;
+    --intro-text-color: #66a1cd;
+    --info-color: gray;
+    --gif-outline: white;
+    --experience-color: white;
+    --grid-line-color: #ddd;
+    --experience-text: #333344;
+    --experience-highlighted-text:#333344;
+    --box-color: #EAEAEA;
+    --contact-box-color: white;
     --black-text-color: #333344;
     --button-bg-color: #66a1cd;
     --button-bg-color2: #C3B2E6;
     --button-outline: #629DCC;
     --star-bg-color:#FFF6B7;
     --star-outline:#EBCA50;
-    --tab-color: #FFFD89;
     --bg-color: #D3BDFF;
     --bg2-color: #F8D4F3;
     --grey-highlight: #EAEAEA;
+}
+
+body.dark-mode {
+  --header-color: #3E2F5B;
+  --header-line: #3E2F5B;
+  --tab-color: #262543;
+  --tab-outline: #262543;
+  --sticky-note-color: #3E2F5B;
+  --intro-text-color: #EBCA50;
+  --info-color: white;
+  --gif-outline: #262543;
+  --experience-color: #19182D;
+  --grid-line-color: #ffffff1a;
+  --experience-text: #EBCA50;
+  --box-color: #7C7C7C;
+  --contact-box-color: #0D1B2A;
+  --black-text-color: white;
+  --button-bg-color: #66a1cd;
+  --button-bg-color2: #C3B2E6;
+  --button-outline: #629DCC;
+  --star-bg-color:#262543;
+  --star-outline:#EBCA50;
+  --bg-color: #0D1B2A;
+  --bg2-color: #3E2F5B;
+  --grey-highlight: #EAEAEA;
 }

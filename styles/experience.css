@@ -2,10 +2,10 @@
     display: flex;
     position: relative;
     flex-direction: column;
-    background-color: white;
+    background-color: var(--experience-color);
     background-image: 
-    linear-gradient(to right, #ddd 1px, transparent 1px),
-    linear-gradient(to bottom, #ddd 1px, transparent 1px);
+    linear-gradient(to right, var(--grid-line-color) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--grid-line-color) 1px, transparent 1px);
     background-size: 60px 60px; /* adjust for bigger/smaller grid squares */
     align-items: center;
     scroll-margin-top: 100px;
@@ -20,6 +20,7 @@
 }
 
 .experiences-text {
+    color: var(--experience-text);
     margin-top: 19px;
     margin-left: 10px;
     font-size: 70px;
@@ -104,12 +105,12 @@
     height: 340px;
     padding: 20px;
     object-fit: contain;
-    background-color: var(--grey-highlight);
+    background-color: var(--box-color);
     border-radius: 24px;
 }
 
 .toggle-on {
-  color: var(--black-text-color);
+  color: var(--exp-highlighted-text);
 }
 
 .skills-title {

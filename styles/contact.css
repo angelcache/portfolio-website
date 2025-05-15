@@ -9,7 +9,7 @@
     position: relative;
     height: clamp(600px, 70vh, 650px);
     width: clamp(1000px, 90vw, 1200px);
-    background-color: white;
+    background-color: var(--contact-box-color);
     border-radius: 50px;
     align-items: center;
     margin: 0 auto;
@@ -41,7 +41,7 @@
 .description {
     border-radius: 20px;
     border: none;
-    background-color: var(--grey-highlight);
+    background-color: var(--box-color);
     padding-top: 20px;
     padding-bottom: 20px;
     width: clamp(0px, 60vw, 400px);
@@ -49,6 +49,7 @@
     margin-bottom: 20px;
     font-family: Nunito;
     font-size: 16px;
+    color: var(--black-text-color);
     outline: none;
 }
 
@@ -86,7 +87,7 @@
 }
 
 .connect-highlight {
-    color: var(--button-bg-color);
+    color: var(--intro-text-color);
 }
 
 .contact-buttons {

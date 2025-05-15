@@ -88,3 +88,12 @@ function playAudio() {
      speakerIcon.setAttribute('src', "img/icons/speaker-icon.png");
   }
 }
+
+// Okay now for light mode dark mode
+
+function changeMode() {
+  console.log('hey');
+  bodyElement = document.body;
+  bodyElement.classList.toggle('dark-mode');
+  console.log('mode changed');
+}
