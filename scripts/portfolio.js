@@ -1,12 +1,24 @@
-// when clicking projects: shows projects
-// when clicking activities shows activities
-// when clicking certificates: shows certificates
 
-// what we need is js class for each buttoon and the little squares that will contiant he image
+// Saves the state so it remains the same when you reload
+const savedTheme = localStorage.getItem("theme");
+const savedMenu = localStorage.getItem("menu");
+const savedMusic = localStorage.getItem("music");
 
-// so everytime we click on one of the buttons, the three images will change as well as the text that will be on top of it
+if (savedMenu === "1" || savedMenu === "2") {
+  const starMenu = document.querySelector(`.js-star-items${savedMenu}`);
+  starMenu.style.width= "350px";
+  starMenu.style.borderColor = "var(--star-outline)";
+  starMenu.style.backgroundColor = "var(--star-bg-color)";
+}
 
-// so for now lets add some pre defined images, get those images
+if (savedMusic === "music-on") {
+  document.querySelector(".lofi-audio").play();
+  document.querySelector(".speaker-icon").setAttribute('src', "img/icons/speaker-icon.png");
+}
+
+if (savedTheme === "dark-mode") {
+  document.body.classList.add("dark-mode")
+}
 
 function changeContent(button, experience) {
   /* Changes the content of the experience boxes to desired image */
@@ -45,55 +57,53 @@ function changeContent(button, experience) {
   }
 }
 
-// Okay for the star menu, every time we click on the star, the star menu will appear
-
-// to make this happen we will give it a non-existent width and then when the star, is clicked its width will be put to normal
-
-// we would use the transition funcitonality to ensure a smooth change
-
 function openStarMenu(star) {
+  /* When user clicks the star, it opens the Star Menu */
   const starMenu = document.querySelector(`.js-star-items${star}`); // accounts for the two star menu buttons
-  console.log(`.js-star-items${star}`)
-
-  console.log(starMenu.style.width);
 
   if (starMenu.style.width !== "350px") {
     starMenu.style.width= "350px";
     starMenu.style.borderColor = "var(--star-outline)";
     starMenu.style.backgroundColor = "var(--star-bg-color)";
+    star === "1" ? localStorage.setItem("menu", "1"): localStorage.setItem("menu", "2");
   } else {
     starMenu.style.width= "0";
     starMenu.style.borderColor= "transparent";
     starMenu.style.backgroundColor = "white";
+    localStorage.setItem("menu", "0");
   }
-
-  //350
-  //2.5
-  //border-color: var(--star-outline);
 }
 
 // Okay now for the audio, it will play the lofi music, everytime we click the speaker icon
 
 function playAudio() {
+  /* When user clicks on the speakerIcon, it will play/mute the lofi music and change the icon to speaker/mute  icon */
   audio = document.querySelector('.lofi-audio');
   speakerIcon = document.querySelector('.speaker-icon')
 
   audio.classList.toggle("music-on");
 
   if (audio.classList.contains("music-on")) {
-    audio.pause();
-     speakerIcon.setAttribute('src', "img/icons/mute-icon.png");
+    audio.play();
+    speakerIcon.setAttribute('src', "img/icons/speaker-icon.png");
+    localStorage.setItem("music", "music-on");
   } else {
-     audio.play();
-     speakerIcon.setAttribute('src', "img/icons/speaker-icon.png");
+    audio.pause();
+    speakerIcon.setAttribute('src', "img/icons/mute-icon.png");
+    localStorage.setItem("music", "");
   }
 }
 
 // Okay now for light mode dark mode
 
 function changeMode() {
-  console.log('hey');
+  /* When user clicks on the sun icon, it will toggle the element from light / dark mode */
   bodyElement = document.body;
   bodyElement.classList.toggle('dark-mode');
-  console.log('mode changed');
+
+  if (document.body.classList.contains("dark-mode")) {
+    localStorage.setItem("theme", "dark-mode");
+  } else {
+    localStorage.setItem("theme", "light-mode");
+  }
 }
