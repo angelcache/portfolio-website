@@ -21,14 +21,22 @@
 
   <body>
     <header class="header">
+
+      <!-- Audio for the lofi bg music -->
+      <audio loop class="lofi-audio">
+        <source src ="audio/lofi-bg-music.mp3" type="audio/mp3">
+      </audio>
+
       <div class="header-content">
         <!-- Star Menu: clickable star icon with a settings menu -->
         <div class="star-menu">
           <img onclick="openStarMenu('1')" class="star" src="img/deco/star-logo.png">
           <div class="js-star-items1 star-items">
             <img class="sun-icon" src="img/icons/sun-icon.png">
+
             <div class="vertical-line"></div>
-            <img class="speaker-icon" src="img/icons/speaker-icon.png">
+            <img onclick="playAudio()" class="speaker-icon" src="img/icons/mute-icon.png">
+
             <div class="vertical-line"></div>
 
             <a target="_blank" href="https://ca.linkedin.com/in/angela-dakay-b6365a244">
@@ -40,7 +48,6 @@
             <a target="_blank" href="https://github.com/angelcache">
               <img class="github-icon" src="img/icons/github-icon.png">
             </a>
-
           </div>
           </div>
         </div>
@@ -143,7 +150,12 @@
     <section id="contact" class="contact-section">
       <div class="contact-box">
         <div class="message-tab">
-          <p class="connect-title">Want to <span class="connect-highlight">Connect?</span></p>
+          <p class="connect-title">
+            Want to 
+            <span class="connect-highlight">
+              Connect?
+            </span>
+          </p>
         </div>
         <div class="contact-descr">
           <p class="contact-text">

@@ -70,5 +70,21 @@ function openStarMenu(star) {
   //350
   //2.5
   //border-color: var(--star-outline);
-  
+}
+
+// Okay now for the audio, it will play the lofi music, everytime we click the speaker icon
+
+function playAudio() {
+  audio = document.querySelector('.lofi-audio');
+  speakerIcon = document.querySelector('.speaker-icon')
+
+  audio.classList.toggle("music-on");
+
+  if (audio.classList.contains("music-on")) {
+    audio.pause();
+     speakerIcon.setAttribute('src', "img/icons/mute-icon.png");
+  } else {
+     audio.play();
+     speakerIcon.setAttribute('src', "img/icons/speaker-icon.png");
+  }
 }
