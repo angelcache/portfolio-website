@@ -114,12 +114,32 @@
 
 .submit-button {
     font-size: 20px;
+    position: relative;
     display: flex;
     padding: 15px 100px 15px 100px;
     width: 100px;
     justify-content: center;
     align-items: center;
     align-self: end;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.submit-button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    z-index: -1;
+    background: linear-gradient(var(--button-hv-color), var(--button-hv-color2));
+    transition: width 0.50s ease;
+}
+
+.submit-button:hover::before {
+    width: 100%;
 }
 
 .linkedin {

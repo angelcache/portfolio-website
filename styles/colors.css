@@ -16,6 +16,8 @@
     --black-text-color: #333344;
     --button-bg-color: #66a1cd;
     --button-bg-color2: #C3B2E6;
+    --button-hv-color: #ccafe7;
+    --button-hv-color2: #80c8e5;
     --button-outline: #629DCC;
     --star-bg-color:#FFF6B7;
     --star-outline:#EBCA50;
@@ -39,8 +41,10 @@ body.dark-mode {
   --box-color: #7C7C7C;
   --contact-box-color: #0D1B2A;
   --black-text-color: white;
-  --button-bg-color: #66a1cd;
-  --button-bg-color2: #C3B2E6;
+  --button-bg-color: #5e86c5;
+  --button-bg-color2: #c29cd9;
+  --button-hv-color: #af7ec1;
+  --button-hv-color2: #4b6fb1;
   --button-outline: #629DCC;
   --star-bg-color:#262543;
   --star-outline:#EBCA50;
