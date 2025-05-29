@@ -49,14 +49,11 @@
 
 .star-items {
     display: flex;
-    background-color: #FFF6B7;
     margin-left: 35px;
     width: 0px;
     height: 60px;
     border-radius: 20px;
-    border: solid;
-    border-width: 2.4px;
-    border-color: transparent;
+    border: 2.4px solid transparent;
     align-items: center;
     justify-content: space-evenly;
     transition: 0.15s;
