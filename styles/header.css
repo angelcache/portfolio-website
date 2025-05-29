@@ -39,6 +39,12 @@
     color: transparent;
     top: -20px;
     left: -20px;
+    opacity: 1;
+    transition: opacity 0.15s ease-in-out;
+}
+
+.star.fade-out {
+  opacity: 0.5;
 }
 
 .star-items {

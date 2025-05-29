@@ -16,8 +16,11 @@ if (savedMusic === "music-on") {
   document.querySelector(".speaker-icon").setAttribute('src', "img/icons/speaker-icon.png");
 }
 
-if (savedTheme === "dark-mode") {
-  document.body.classList.add("dark-mode");
+if (savedTheme === "light-mode") {
+  document.body.classList.remove("dark-mode");
+  star = document.querySelector(".star");
+  star2 = document.querySelector(".star2");
+  setStarLogo(star, star2);
 }
 
 // Event Listeners for clickable icons
@@ -89,8 +92,6 @@ function openStarMenu(star) {
   }
 }
 
-// Okay now for the audio, it will play the lofi music, everytime we click the speaker icon
-
 function playAudio() {
   /* When user clicks on the speakerIcon, it will play/mute the lofi music and change the icon to speaker/mute  icon */
   audio = document.querySelector('.lofi-audio');
@@ -109,16 +110,35 @@ function playAudio() {
   }
 }
 
-// Okay now for light mode dark mode
-
 function changeMode() {
   /* When user clicks on the sun icon, it will toggle the element from light / dark mode */
   bodyElement = document.body;
   bodyElement.classList.toggle('dark-mode');
+
+  const starLogo = document.querySelector('.star');
+  const starLogo2 = document.querySelector('.star2');
+  starLogo.classList.add("fade-out");
+  starLogo2.classList.add("fade-out");
+
+  setTimeout(() => {
+
+    setStarLogo(starLogo, starLogo2)
+    
+    starLogo.classList.remove("fade-out");
+    starLogo2.classList.remove("fade-out");
+  }, 150);
 
   if (document.body.classList.contains("dark-mode")) {
     localStorage.setItem("theme", "dark-mode");
   } else {
     localStorage.setItem("theme", "light-mode");
   }
+}
+
+function setStarLogo(star1, star2) {
+  /* When user clicks on the sun icon, it will toggle the element from light / dark mode */
+  star1.src = document.body.classList.contains("dark-mode") ? "./img/deco/star-logo-dark.png"
+    : "./img/deco/star-logo.png";
+  star2.src = document.body.classList.contains("dark-mode") ? "./img/deco/star-logo2-dark.png"
+  : "./img/deco/star-logo2.png";
 }
