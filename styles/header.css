@@ -105,20 +105,22 @@
 }
 
 .home-header {
-    font-size: 30px;
-    padding-right: 30px;
     padding-left: 30px;
-    color: var(--black-text-color);
-    text-decoration: none;
-    cursor: pointer;
 }
 
+.home-header,
 .projects-header {
     font-size: 30px;
     padding-right: 30px;
     color: var(--black-text-color);
     text-decoration: none;
     cursor: pointer;
+}
+
+
+.home-header:hover,
+.projects-header:hover {
+    color: var(--intro-text-color);
 }
 
 .connect-button {
