@@ -39,10 +39,60 @@
     padding-top: 60px;
     font-size: 40px;
     padding-bottom: 20px;
+    
 }
 
 .dynamic-text {
-    color: var(--intro-text-color);
+    position: relative;
+}
+
+.dynamic-text::before {
+  content: "Angela Dakay";
+  color: var(--intro-text-color);
+  animation: words 20s infinite;
+}
+
+.dynamic-text::after {
+  content: "";
+  position: absolute;
+  width: calc(100% + 8px);
+  height: 100%;
+  background-color: var(--sticky-note-color);
+  border-left: 2px solid var(--intro-text-color);
+  right: -8px;
+  animation: cursor .8s infinite, typing 20s steps(14) infinite;
+}
+
+
+@keyframes cursor {
+  50% { border-color: transparent }
+}
+
+@keyframes words {
+  0%, 20% {
+    content: "Angela Dakay"
+  }
+  21%, 40% {
+    content: "a Programmer"
+  }
+  41%, 60% {
+    content: "a Learner"
+  }
+  61%, 80% {
+    content: "a Designer"
+  }
+  81%, 100% {
+    content: "a Developer"
+  }
+}
+
+@keyframes typing {
+  10%,15%,30%,35%,50%,55%,70%,90%,95% {
+    width: 0;
+  }
+  5%,20%,25%,40%,45%,60%,65%,80%,85%{
+    width: calc(100% + 8px);
+  }
 }
 
 .info-text {
