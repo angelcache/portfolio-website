@@ -167,3 +167,22 @@ img.code {
     height: 43px;
 }
 
+img.linkedin:hover,
+img.github:hover,
+img.resume:hover,
+img.code:hover {
+  animation: float 2s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-2.5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+

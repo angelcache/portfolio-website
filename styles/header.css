@@ -71,7 +71,7 @@
     background-color: var(--star-outline);
 }
 
-.sun-icon {
+.theme-icon {
     margin-left: 45px;
     margin-right: 10px;
     height: 40px;
@@ -104,6 +104,39 @@
     height: 38px;
     cursor: pointer;
 }
+
+.theme-icon.hover-effect:hover,
+.speaker-icon:hover,
+.linkedin-icon:hover,
+.github-icon:hover {
+  animation: float 2s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-2.5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.theme-spin {
+  animation: spin 2s ease-in-out;
+}
+
+@keyframes spin {
+  from {
+    transform:rotate(0deg);
+  }
+  to {
+    transform:rotate(360deg);
+  }
+}
+
 
 .right-menu {
     display: flex;
