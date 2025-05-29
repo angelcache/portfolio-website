@@ -17,14 +17,29 @@ if (savedMusic === "music-on") {
 }
 
 if (savedTheme === "dark-mode") {
-  document.body.classList.add("dark-mode")
+  document.body.classList.add("dark-mode");
 }
 
-function changeContent(button, experience) {
+// Event Listeners for clickable icons
+theme = document.querySelector(".sun-icon");
+theme.addEventListener("click", changeMode);
+music = document.querySelector(".speaker-icon")
+music.addEventListener("click", playAudio);
+star = document.querySelector(".star");
+star.addEventListener("click", () => openStarMenu('1'));
+star2 = document.querySelector(".star2");
+star2.addEventListener("click", () => openStarMenu('2'))
+
+const experienceButtons = document.querySelectorAll(".exp-buttons button");
+
+experienceButtons.forEach(button => {
+  button.addEventListener("click", (e) => changeContent(e.target))
+})
+
+function changeContent(button) {
   /* Changes the content of the experience boxes to desired image */
-
   button.classList.add('toggle-on');
-
+  experience = (button.innerText).toLowerCase();
   exp_buttons = [
     document.querySelector('.js-project-button'),
     document.querySelector('.js-club-button'),

@@ -32,13 +32,25 @@
       <div class="header-content">
         <!-- Star Menu: clickable star icon with a settings menu -->
         <div class="star-menu">
-          <img onclick="openStarMenu('1')" class="star" src="img/deco/star-logo.png">
+          <img class="star" src="img/deco/star-logo.png">
           <div class="js-star-items1 star-items">
 
-            <img onclick="changeMode()" class="sun-icon" src="img/icons/sun-icon.png">
+           
+            <svg class="sun-icon" width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M46.7464 31.9638C46.7464 39.5294 40.6632 45.6626 33.1591 45.6626C25.6551 45.6626 19.5718 39.5294 19.5718 31.9638C19.5718 24.3982 25.6551 18.265 33.1591 18.265C40.6632 18.265 46.7464 24.3982 46.7464 31.9638Z" fill="white"/>
+              <path d="M28.7729 2.55047C28.694 1.30224 29.6419 0.225358 30.89 0.14518C32.1382 0.0650029 33.2139 1.01189 33.2928 2.26012L33.8568 11.1844C33.9357 12.4326 32.9878 13.5095 31.7397 13.5897C30.4915 13.6699 29.4158 12.723 29.3369 11.4747L28.7729 2.55047Z" fill="white"/>
+              <path d="M56.442 10.4319C57.4748 9.71426 58.8874 9.97418 59.5971 11.0124C60.3069 12.0507 60.0449 13.4741 59.0121 14.1917L51.1865 19.6293C50.1537 20.3469 48.7411 20.087 48.0314 19.0487C47.3216 18.0105 47.5836 16.587 48.6164 15.8694L56.442 10.4319Z" fill="white"/>
+              <path d="M60.7905 29.228C62.0204 28.9525 63.2375 29.7269 63.5088 30.9578C63.7801 32.1887 63.0029 33.41 61.773 33.6856L52.9633 35.6593C51.7334 35.9349 50.5164 35.1604 50.245 33.9295C49.9737 32.6986 50.7509 31.4774 51.9808 31.2018L60.7905 29.228Z" fill="white"/>
+              <path d="M58.9031 49.8601C59.967 50.5315 60.2916 51.9422 59.628 53.0111C58.9645 54.0799 57.5641 54.4021 56.5002 53.7307L48.8357 48.8941C47.7718 48.2228 47.4472 46.812 48.1107 45.7432C48.7743 44.6743 50.1747 44.3522 51.2386 45.0235L58.9031 49.8601Z" fill="white"/>
+              <path d="M37.872 61.6615C37.8921 62.912 36.8947 63.9424 35.6442 63.9629C34.3937 63.9834 33.3636 62.9863 33.3435 61.7357L33.1956 52.5673C33.1754 51.3168 34.1728 50.2864 35.4233 50.2659C36.6738 50.2454 37.7039 51.2425 37.7241 52.4931L37.872 61.6615Z" fill="white"/>
+              <path d="M15.5345 57.6999C14.8435 58.7461 13.4394 59.0277 12.3984 58.3288C11.3575 57.6299 11.0738 56.2152 11.7648 55.169L16.7927 47.5569C17.4837 46.5107 18.8878 46.2291 19.9288 46.9281C20.9697 47.627 21.2534 49.0417 20.5624 50.0879L15.5345 57.6999Z" fill="white"/>
+              <path d="M11.4402 31.3597C12.6702 31.0842 13.8872 31.8586 14.1585 33.0895C14.4298 34.3204 13.6527 35.5417 12.4227 35.8172L3.20957 37.8814C1.97961 38.157 0.762588 37.3825 0.491278 36.1516C0.219969 34.9207 0.997111 33.6994 2.22708 33.4239L11.4402 31.3597Z" fill="white"/>
+              <path d="M15.9624 15.8395C16.95 16.6172 17.1266 18.0532 16.3568 19.047C15.587 20.0408 14.1623 20.216 13.1747 19.4384L7.21035 14.7422C6.2227 13.9646 6.04609 12.5285 6.81588 11.5347C7.58568 10.5409 9.01037 10.3657 9.99802 11.1434L15.9624 15.8395Z" fill="white"/>
+            </svg>
+
 
             <div class="vertical-line"></div>
-            <img onclick="playAudio()" class="speaker-icon" src="img/icons/mute-icon.png">
+            <img class="speaker-icon" src="img/icons/mute-icon.png">
 
             <div class="vertical-line"></div>
 
@@ -105,18 +117,18 @@
         <!-- Experience buttons: clickable buttons to projects, club activities and certificates -->
         <div class="exp-buttons-container">
           <div class="exp-buttons">
-            <button onclick="changeContent(this, 'project')" class="js-project-button projects-button toggle-on">
-              Projects
+            <button class="js-project-button projects-button toggle-on">
+            Projects
             </button>
 
             <div class="vertical-line"></div>
-            <button onclick="changeContent(this, 'activities')" class="js-club-button  clubs-button">
-              Activities
+            <button class="js-club-button clubs-button">
+            Activities
             </button>
 
             <div class="vertical-line2"></div>
-            <button onclick="changeContent(this, 'cert')" class="js-cert-button  cert-button">
-              Certificates
+            <button class="js-cert-button cert-button">
+            Certificates
             </button>
           </div>
         </div>
@@ -125,14 +137,14 @@
 
           <div class="box-design">
             <img class="pink-heart" src="img/deco/pink-heart.png">
-            <img class="js-box-1 project-boxes" src="img/experiences/project1-img.png" alt="empty">
+            <img class="js-box-1 project-boxes" src="img/experiences/projects1-img.png" alt="empty">
           </div>
 
-          <img class="js-box-2 project-boxes" src="img/experiences/project2-img.png" alt="empty">
+          <img class="js-box-2 project-boxes" src="img/experiences/projects2-img.png" alt="empty">
 
           <div class="box-design">
             <img class="blue-star" src="img/deco/blue-star.png">
-            <img class="js-box-3 project-boxes" src="img/experiences/project3-img.png">
+            <img class="js-box-3 project-boxes" src="img/experiences/projects3-img.png">
           </div>
 
         </div>
@@ -144,7 +156,7 @@
             <div class="vertical-line"></div>
             <p class="skills-text">PYTHON, JAVA, HTML, CSS..</p>
           </div>
-          <img onclick="openStarMenu('2')" class="star2" src="img/deco/star-logo2.png">
+          <img class="star2" src="img/deco/star-logo2.png">
         </div>
       </div>
 
