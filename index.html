@@ -80,10 +80,7 @@
         <p class="intro-text">Hi I'm <strong class="dynamic-text"></strong></p>
 
         <p class="info-text">
-          I am currently a computing science student at the University of Alberta. I am interested in software 
-          development and cybersecurity.
-          Previously, I was a teaching assistant for the course CMPUT 204 (Algorithms I). I am actively
-          seeking out exciting opportunities in the tech field.
+          Currently, I'm studying Computing Science at the University of Alberta, with a focus on software development and AI. I’ve also worked as a Teaching Assistant for CMPUT 204 (Algorithms I), where I grew my problem-solving skills. I’m excited to keep learning, building, and contributing to meaningful projects in tech.
         </p>
       </div>
 
@@ -186,16 +183,27 @@
           </div>
         </div>
 
-        <div class="contact-form">
-          <input class="name" placeholder="Name">
-          <input class="email" placeholder="Email">
-          <textarea wrap="soft" class="description" placeholder="Description"></textarea>
+        <form 
+          action="https://formspree.io/f/myzpaenn"
+          method="POST"
+          class="contact-form"
+        >
+          <input 
+            type="text" name="name" class="name" placeholder="Name" required
+          >
 
-          <button class="submit-button">
+          <input 
+            type="email" name="email" class="email" placeholder="Email" required
+          >
+          <textarea 
+            wrap="soft" name="message" class="description" placeholder="Message" required></textarea>
+
+          <p class="form-status"></p>
+
+          <button type="submit" class="submit-button">
             Submit
           </button>
-        </div>
-
+        </form>
       </div>
     </section>
 
@@ -205,5 +213,6 @@
     
     <script src="scripts/experience.js"></script>
     <script src="scripts/starMenu.js"></script>
+    <script src="scripts/contact.js"></script>
   </body>
 </html>

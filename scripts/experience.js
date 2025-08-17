@@ -24,18 +24,41 @@ function changeContent(button) {
   }
 
   // change images
-  for (i = 1; i <= 3; i++) {
+
+  if (experience == "activities") {
     expImages.innerHTML = `
-    <div class="box-design">
-      <img class="pink-heart" src="img/deco/pink-heart.png">
-      <img class="js-box-1 project-boxes" src="img/experiences/${experience}1-img.png" alt="empty">
-    </div>
+      <div class="box-design">
+        <img class="pink-heart" src="img/deco/pink-heart.png">
+        <img class="js-box-1 project-boxes" src="img/experiences/${experience}1-img.png" alt="empty">
+      </div>
 
-    <img class="js-box-2 project-boxes" src="img/experiences/${experience}2-img.png" alt="empty">
+      <img class="js-box-2 project-boxes" src="img/experiences/${experience}2-img.png" alt="empty">
 
-    <div class="box-design">
-      <img class="blue-star" src="img/deco/blue-star.png">
-      <img class="js-box-3 project-boxes" src="img/experiences/${experience}3-img.png">
-    </div>`
+      <div class="box-design">
+        <img class="blue-star" src="img/deco/blue-star.png">
+        <img class="js-box-3 project-boxes" src="img/experiences/${experience}3-img.png">
+      </div>
+    `
+  } else if (experience == "certificates") {
+    `
+      <div class="box-design">
+        <img class="pink-heart" src="img/deco/pink-heart.png">
+        <img class="js-box-1 project-boxes" src="img/experiences/${experience}1-img.png" alt="empty">
+      </div>
+    `
+  } else {
+    `
+      <div class="box-design">
+        <img class="pink-heart" src="img/deco/pink-heart.png">
+        <img class="js-box-1 project-boxes" src="img/experiences/${experience}1-img.png" alt="empty">
+      </div>
+
+      <img class="js-box-2 project-boxes" src="img/experiences/${experience}2-img.png" alt="empty">
+
+      <div class="box-design">
+        <img class="blue-star" src="img/deco/blue-star.png">
+        <img class="js-box-3 project-boxes" src="img/experiences/${experience}3-img.png">
+      </div>
+    `
   }
 }

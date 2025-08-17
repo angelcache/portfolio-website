@@ -9,6 +9,7 @@
     background-size: 60px 60px; /* adjust for bigger/smaller grid squares */
     align-items: center;
     scroll-margin-top: 100px;
+    min-height: fit-content;
 }
 
 .experience-content {
@@ -147,6 +148,20 @@
     position: absolute;
     top: -40px;
     right: -30px;
+    animation: reveal 2s ease-in-out;
+    animation-timeline: view();
+  animation-range:  entry 0% entry 100%;
+}
+
+
+
+@keyframes reveal {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 .pink-heart {
@@ -154,4 +169,7 @@
     position: absolute;
     bottom: -40px;
     left: -30px;
+    animation: reveal 2s ease-in-out;
+    animation-timeline: view();
+    animation-range:  entry 0% entry 100%;
 }
