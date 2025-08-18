@@ -10,13 +10,14 @@
     <link rel="stylesheet" href="styles/general.css">
     <link rel="stylesheet" href="styles/home.css">
     <link rel="stylesheet" href="styles/experience.css">
+    <link rel="stylesheet" href="styles/experience-card.css">
     <link rel="stylesheet" href="styles/footer.css">
     <link rel="stylesheet" href="styles/contact.css">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Patrick+Hand&display=swap" rel="stylesheet">
     
   </head>
 
@@ -119,18 +120,44 @@
 
         <div class="exp-images">
 
-          <div class="box-design">
-            <img class="pink-heart" src="img/deco/pink-heart.png">
-            <img class="js-box-1 project-boxes" src="img/experiences/projects1-img.png" alt="empty">
-          </div>
-
+          <a href="#js-box-1">
+            <div class="box-design">
+              <img class="pink-heart" src="img/deco/pink-heart.png">
+              <img class="js-box-1 project-boxes" src="img/experiences/projects1-img.png" alt="empty">
+            </div>
+          </a>
+          
           <img class="js-box-2 project-boxes" src="img/experiences/projects2-img.png" alt="empty">
 
           <div class="box-design">
             <img class="blue-star" src="img/deco/blue-star.png">
             <img class="js-box-3 project-boxes" src="img/experiences/projects3-img.png">
           </div>
+        </div>
 
+        <div class="overlay">.</div>
+        
+        <div class="exp-cards">
+          <div id="js-box-1" class="exp-card">
+            <div class="highlighter">
+              comfort quest
+            </div>
+            <div class="exp-card-info">
+              <img src="./img/experiences/projects1-img.png" alt="">
+              <div class="text">
+                <p class="exp-info-tools">Tools Used: Java, Java swing  </p>
+                <p class="exp-info-text">A gui mini-game I built while learning Java. You play as a penguin friend helping a burnt-out chicken through fun mini-games: catching bananas, running in a library, and stacking clothes. Each unlocking a happy ending for chicken and a final ending once you finish all three.</p>
+
+                <div class="exp-card-extra-info">
+                  <img src="./img/icons/github-icon.png" alt="github icon">
+                  <p>Aug-Dec 2024</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="#js-box-1" class="exp-card">
+            YOLO
+          </div>
         </div>
 
         <div class="star-menu2">
@@ -214,5 +241,6 @@
     <script src="scripts/experience.js"></script>
     <script src="scripts/starMenu.js"></script>
     <script src="scripts/contact.js"></script>
+    <script src="scripts/experience-cards.js"></script>
   </body>
 </html>

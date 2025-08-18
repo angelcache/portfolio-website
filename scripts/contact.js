@@ -1,8 +1,6 @@
 const form = document.querySelector(".contact-form");
 const formStatus = document.querySelector(".form-status")
 
-console.log(form);
-
 form.addEventListener("submit", async (e) => {
   e.preventDefault();
   const data = new FormData(form);

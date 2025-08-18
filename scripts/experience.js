@@ -24,41 +24,30 @@ function changeContent(button) {
   }
 
   // change images
+  const expConfig = {
+    projects: 3,
+    activities: 3,
+    certificates: 1,
+  }
 
-  if (experience == "activities") {
-    expImages.innerHTML = `
-      <div class="box-design">
-        <img class="pink-heart" src="img/deco/pink-heart.png">
-        <img class="js-box-1 project-boxes" src="img/experiences/${experience}1-img.png" alt="empty">
-      </div>
+  const count = expConfig[experience];
 
-      <img class="js-box-2 project-boxes" src="img/experiences/${experience}2-img.png" alt="empty">
+  let experienceHTML = "";
+  for (let i = count; i >= 1; i--) {
+    experienceHTML += `
+      <div class="box-design">
+        ${count <= 3 && i === count ? '<img class="pink-heart" src="img/deco/pink-heart.png">': ""}
+        ${count > 3 && i === 1 ? '<img class="pink-heart" src="img/deco/pink-heart.png">': ""}
+        ${count === 3 && i === 1 ? '<img class="blue-star" src="img/deco/blue-star.png">': ""}
 
-      <div class="box-design">
-        <img class="blue-star" src="img/deco/blue-star.png">
-        <img class="js-box-3 project-boxes" src="img/experiences/${experience}3-img.png">
-      </div>
-    `
-  } else if (experience == "certificates") {
-    `
-      <div class="box-design">
-        <img class="pink-heart" src="img/deco/pink-heart.png">
-        <img class="js-box-1 project-boxes" src="img/experiences/${experience}1-img.png" alt="empty">
-      </div>
-    `
-  } else {
-    `
-      <div class="box-design">
-        <img class="pink-heart" src="img/deco/pink-heart.png">
-        <img class="js-box-1 project-boxes" src="img/experiences/${experience}1-img.png" alt="empty">
-      </div>
-
-      <img class="js-box-2 project-boxes" src="img/experiences/${experience}2-img.png" alt="empty">
-
-      <div class="box-design">
-        <img class="blue-star" src="img/deco/blue-star.png">
-        <img class="js-box-3 project-boxes" src="img/experiences/${experience}3-img.png">
+        ${count > 3 && i === count - 2 ? '<img class="blue-star" src="img/deco/blue-star.png">': ""}
+        
+        <img class="js-box-${i} project-boxes" src="img/experiences/${experience}${i}-img.png" alt="${experience} ${i}">
       </div>
     `
   }
+
+  console.log(experienceHTML);
+
+  expImages.innerHTML = experienceHTML;
 }

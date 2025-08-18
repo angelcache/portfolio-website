@@ -116,6 +116,7 @@
 
 .toggle-on {
   color: var(--exp-highlighted-text);
+  font-weight: bold;
 }
 
 .skills-title {
@@ -153,8 +154,6 @@
   animation-range:  entry 0% entry 100%;
 }
 
-
-
 @keyframes reveal {
   0% {
     transform: scale(0);
@@ -172,4 +171,42 @@
     animation: reveal 2s ease-in-out;
     animation-timeline: view();
     animation-range:  entry 0% entry 100%;
+}
+
+.exp-cards {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 40;
+}
+
+.exp-card {
+  display: none;
+  width: 60vw;
+  height: 64vh;
+  background-color: #262543;
+  background-image: 
+    linear-gradient(to bottom, var(--grid-line-color) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+
+.exp-card.active {
+  display: flex;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 20;
+}
+
+.overlay.active {
+  display: block;
+  background-color: #19182DFA;
+  color: transparent;
+  height: 100%;
+  width: 100%;
+  z-index: 20;
 }
