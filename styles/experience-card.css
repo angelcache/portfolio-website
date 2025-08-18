@@ -1,0 +1,117 @@
+
+.exp-cards {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 40;
+}
+
+.exp-card {
+  display: none;
+  aspect-ratio: 4 / 3;
+  width: 65vw;
+  height: 60vh;
+  background-color: #262543;
+  background-image: 
+    linear-gradient(to bottom, var(--grid-line-color) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+
+.exp-card.active {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  width: 100%;
+  height: 100%;
+  background-color: #19182DFA;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  transform: scale(0.98);
+}
+
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+}
+
+.highlighter {
+  width: fit-content;
+  height: fit-content;
+  position: relative;
+  padding: 0px 40px;
+  font-family: 'Pacifico', Arial;
+  font-size: 4rem;
+  color: white;
+  z-index: 2;
+  isolation: isolate;
+}
+
+.highlighter::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 0.9em;
+  background-color: #C49B46B3;
+  transform: translateY(-40%);
+  z-index: -1;
+}
+
+.exp-card-info {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 40px;
+  width: 100%;
+  height: 100%;
+}
+
+.exp-card-info img {
+  width: auto;
+  height: 380px;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  width: 310px;
+  height: 80%;
+}
+
+.text p {
+  font-family: 'Patrick Hand', cursive;
+}
+
+.exp-info-tools {
+  font-size: 2rem;
+}
+
+.exp-info-text {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.exp-card-extra-info {
+  display: flex;
+  justify-content: right;
+  margin-right: 10px;
+}
+
+.exp-card-extra-info img {
+  width: 30px;
+  height: auto;
+  margin-right: 10px;
+}

@@ -186,3 +186,8 @@ img.code:hover {
   }
 }
 
+.form-status {
+  position: absolute;
+  bottom: 48px;
+  color: var(--intro-text-color);
+}

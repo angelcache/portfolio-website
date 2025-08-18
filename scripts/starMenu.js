@@ -44,9 +44,9 @@ function openStarMenu(star) {
     starMenu.style.backgroundColor = "var(--star-bg-color)";
     star === "1" ? localStorage.setItem("menu", "1"): localStorage.setItem("menu", "2");
   } else {
-    starMenu.style.width= "0";
+    starMenu.style.width = "0";
     starMenu.style.borderColor= "transparent";
-    starMenu.style.backgroundColor = "white";
+    starMenu.style.backgroundColor = "transparent";
     localStorage.setItem("menu", "0");
   }
 }
