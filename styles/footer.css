@@ -1,19 +1,19 @@
 .footer {
-    display: flex;
-    height: 10vh;
-    width: 100vw;
-    background-color: var(--header-color);
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  height: 10vh;
+  width: 100vw;
+  background-color: var(--header-color);
+  justify-content: center;
+  align-items: center;
 }
 
 .footer-note {
-    font-family: Lobster Two;
-    font-size: 20px;
-    color: var(--info-color);
+  font-family: Lobster Two;
+  font-size: 20px;
+  color: var(--info-color);
 }
 
 .footer-text {
-    color: var(--star-outline);
-    text-decoration: none;
+  color: var(--star-outline);
+  text-decoration: none;
 }

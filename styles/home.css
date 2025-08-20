@@ -1,48 +1,48 @@
 .home-page {
-    display: flex;
-    justify-content: center;
-    gap: clamp(100px, 30vw, 150px);
-    padding-right: 40px;
-    height: 700px;
-    padding: 2rem;
-    align-items:center;
-    padding-bottom: 4rem;
-    scroll-margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  gap: clamp(100px, 30vw, 150px);
+  padding-right: 40px;
+  height: 700px;
+  padding: 2rem;
+  align-items: center;
+  padding-bottom: 4rem;
+  scroll-margin-top: 100px;
 }
 
 .sticky-tab {
-    position: absolute;
-    width: 220px;
-    height: 40px;
-    background-color: var(--tab-color);
-    border: 2.4px solid var(--tab-outline);
-    border-radius: 6px;
-    top: -15px;
+  position: absolute;
+  width: 220px;
+  height: 40px;
+  background-color: var(--tab-color);
+  border: 2.4px solid var(--tab-outline);
+  border-radius: 6px;
+  top: -15px;
 }
 
 .sticky-note {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    width: clamp(100px, 40vw, 600px);
-    height: clamp(40px, 60vh, 500px);
-    padding: 1rem;
-    background-color: var(--sticky-note-color);
-    border-radius: 20px;
-    box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.10);
-    word-break: break-word;
-    overflow-wrap: break-word;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: clamp(100px, 40vw, 600px);
+  height: clamp(40px, 60vh, 500px);
+  padding: 1rem;
+  background-color: var(--sticky-note-color);
+  border-radius: 20px;
+  box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.10);
+  word-break: break-word;
+  overflow-wrap: break-word;
 }
 
 .intro-text {
-    padding-top: 60px;
-    font-size: 40px;
-    padding-bottom: 20px; 
+  padding-top: 60px;
+  font-size: 40px;
+  padding-bottom: 20px;
 }
 
 .dynamic-text {
-    position: relative;
+  position: relative;
 }
 
 .dynamic-text::before {
@@ -64,51 +64,81 @@
 
 
 @keyframes cursor {
-  50% { border-color: transparent }
+  50% {
+    border-color: transparent
+  }
 }
 
 @keyframes words {
-  0%, 20% {
+
+  0%,
+  20% {
     content: "Angela Dakay"
   }
-  21%, 40% {
+
+  21%,
+  40% {
     content: "a Programmer"
   }
-  41%, 60% {
+
+  41%,
+  60% {
     content: "a Learner"
   }
-  61%, 80% {
+
+  61%,
+  80% {
     content: "a Designer"
   }
-  81%, 100% {
+
+  81%,
+  100% {
     content: "a Developer"
   }
 }
 
 @keyframes typing {
-  10%,15%,30%,35%,50%,55%,70%,90%,95% {
+
+  10%,
+  15%,
+  30%,
+  35%,
+  50%,
+  55%,
+  70%,
+  90%,
+  95% {
     width: 0;
   }
-  5%,20%,25%,40%,45%,60%,65%,80%,85%{
+
+  5%,
+  20%,
+  25%,
+  40%,
+  45%,
+  60%,
+  65%,
+  80%,
+  85% {
     width: calc(100% + 8px);
   }
 }
 
 .info-text {
-    font-size: clamp(16px, 3vw, 22px);
-    color: var(--info-color);
-    padding: 10px 30px 60px 30px;
-    overflow-y: auto;
+  font-size: clamp(16px, 3vw, 22px);
+  color: var(--info-color);
+  padding: 10px 30px 60px 30px;
+  overflow-y: auto;
 }
 
 .home-image {
-    width: clamp(100px, 30vw, 500px);
-    border-radius: 40px;
-    border: solid;
-    border-color: var(--gif-outline);
+  width: clamp(100px, 30vw, 500px);
+  border-radius: 40px;
+  border: solid;
+  border-color: var(--gif-outline);
 }
 
 .gif-credits {
-    font-size: 16px;
-    color: white;
+  font-size: 16px;
+  color: white;
 }

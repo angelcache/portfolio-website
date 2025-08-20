@@ -5,47 +5,48 @@ html {
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
-    align-items: center;
-    margin: 0;
-    background-image: linear-gradient(to right, var(--bg-color), var(--bg2-color));
-    margin-top: 120px;
-    overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  margin: 0;
+  background-image: linear-gradient(to right, var(--bg-color), var(--bg2-color));
+  margin-top: 120px;
+  overflow-x: hidden;
 }
 
 a {
-    color: white
+  color: white
 }
 
 p {
-    font-family: Nunito;
-    margin: 0;
-    color: var(--black-text-color);
+  font-family: Nunito;
+  margin: 0;
+  color: var(--black-text-color);
 }
 
 h1 {
-    color: var(--black-text-color);
-    font-family: Nunito;
-    margin: 0;
-    font-weight: normal;
+  color: var(--black-text-color);
+  font-family: Nunito;
+  margin: 0;
+  font-weight: normal;
 }
 
 button {
-    background: linear-gradient(to right, var(--button-bg-color), var(--button-bg-color2));
-    color: white;
-    border: 2.4px solid var(--button-outline);
-    border-radius: 20px;
+  background: linear-gradient(to right, var(--button-bg-color), var(--button-bg-color2));
+  color: white;
+  border: 2.4px solid var(--button-outline);
+  border-radius: 20px;
 }
 
 .projects-section,
 .contact-section {
-    width: 100vw;
-    height: 820px;
-    padding: 2rem;
+  width: 100vw;
+  height: 820px;
+  padding: 2rem;
 }
 
-body, body * {
+body,
+body * {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
