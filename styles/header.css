@@ -1,46 +1,46 @@
 @import url('colors.css');
 
 .header {
-    display: flex;
-    position: fixed;
-    background-color: var(--header-color);
-    justify-content: center;
-    align-items: center;
-    left: 0;
-    right: 0;
-    top: 0;
-    height: 100px;
-    padding: 10px 20px 10px 20px;
-    border-bottom: solid;
-    border-color:var(--header-line);
-    border-bottom-width: 3px;
-    z-index: 100;
+  display: flex;
+  position: fixed;
+  background-color: var(--header-color);
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 100px;
+  padding: 10px 20px 10px 20px;
+  border-bottom: solid;
+  border-color: var(--header-line);
+  border-bottom-width: 3px;
+  z-index: 100;
 }
 
 .header-content {
-    width: 800px;
-    align-items: center;
+  width: 800px;
+  align-items: center;
 }
 
 .vertical-flex {
-    display: flex;
+  display: flex;
 }
 
 .star-menu {
-    display: flex;
-    position: relative;
-    align-items: center;
+  display: flex;
+  position: relative;
+  align-items: center;
 }
 
 .star {
-    width: 120px;
-    cursor: pointer;
-    position: absolute;
-    color: transparent;
-    top: -20px;
-    left: -20px;
-    opacity: 1;
-    transition: opacity 0.15s ease-in-out;
+  width: 120px;
+  cursor: pointer;
+  position: absolute;
+  color: transparent;
+  top: -20px;
+  left: -20px;
+  opacity: 1;
+  transition: opacity 0.15s ease-in-out;
 }
 
 .star.fade-out {
@@ -48,74 +48,86 @@
 }
 
 .star-items {
-    display: flex;
-    margin-left: 35px;
-    width: 0px;
-    height: 60px;
-    border-radius: 20px;
-    border: 2.4px solid transparent;
-    align-items: center;
-    justify-content: space-evenly;
-    transition: 0.15s;
-    overflow: hidden;
+  display: flex;
+  margin-left: 35px;
+  width: 0px;
+  height: 60px;
+  border-radius: 20px;
+  border: 2.4px solid transparent;
+  align-items: center;
+  justify-content: space-evenly;
+  transition: 0.15s;
+  overflow: hidden;
 }
 
 .star-items .vertical-line {
-    margin-left: 5px;
-    margin-right: 5px;
-    width: 2.5px;
-    height: 60px;
-    background-color: var(--star-outline);
+  margin-left: 5px;
+  margin-right: 5px;
+  width: 2.5px;
+  height: 60px;
+  background-color: var(--star-outline);
 }
 
 .theme-icon {
-    margin-left: 45px;
-    margin-right: 10px;
-    height: 40px;
-    cursor: pointer;
+  margin-left: 45px;
+  margin-right: 10px;
+  height: 40px;
+  cursor: pointer;
 }
 
 .speaker-icon {
-    margin-left: 15px;
-    margin-right: 15px;
-    height: 40px;
-    width: 35px;
-    height: 35px;
-    cursor: pointer;
+  margin-left: 15px;
+  margin-right: 15px;
+  height: 40px;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
 }
 
-.linkedin-icon{
-    margin-left: 15px;
-    margin-right: 15px;
-    height: 40px;
-    width: 34px;
-    height: 34px;
-    margin-bottom: 4px;
-    cursor: pointer;
+.linkedin-icon {
+  margin-left: 15px;
+  margin-right: 15px;
+  height: 40px;
+  width: 34px;
+  height: 34px;
+  margin-bottom: 4px;
+  cursor: pointer;
 }
 
 .github-icon {
-    margin-left: 15px;
-    margin-right: 15px;
-    width: 38px;
-    height: 38px;
-    cursor: pointer;
+  margin-left: 15px;
+  margin-right: 15px;
+  width: 38px;
+  height: 38px;
+  cursor: pointer;
+}
+
+.theme-icon,
+.speaker-icon,
+.linkedin-icon,
+.github-icon{
+  transition: 
+    filter 0.15s ease-in-out,
+    transform 0.15s ease-in-out;
 }
 
 .theme-icon.hover-effect:hover,
 .speaker-icon:hover,
 .linkedin-icon:hover,
 .github-icon:hover {
-  animation: float 2s ease-in-out infinite;
+  transform: scale(1.05);
+  filter: drop-shadow(0 0 4px var(--glow-color));
 }
 
 @keyframes float {
   0% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(-2.5px);
   }
+
   100% {
     transform: translateY(0);
   }
@@ -127,65 +139,66 @@
 
 @keyframes spin {
   from {
-    transform:rotate(0deg);
+    transform: rotate(0deg);
   }
+
   to {
-    transform:rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 
 
 .right-menu {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .home-header {
-    padding-left: 30px;
+  padding-left: 30px;
 }
 
 .home-header,
 .projects-header {
-    font-size: 30px;
-    padding-right: 30px;
-    color: var(--black-text-color);
-    text-decoration: none;
-    cursor: pointer;
+  font-size: 30px;
+  padding-right: 30px;
+  color: var(--black-text-color);
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .home-header:hover,
 .projects-header:hover {
-    color: var(--intro-text-color);
+  color: var(--intro-text-color);
 }
 
 .connect-button {
-    color: white;
-    position: relative;
-    font-family: Roboto;
-    background: linear-gradient(to right, var(--button-bg-color), var(--button-bg-color2));
-    border: 2.4px solid var(--button-outline);
-    border-radius: 20px;
-    font-size: 20px;
-    padding: 20px 40px 20px 40px;
-    border-radius: 30px;
-    white-space: nowrap;
-    text-decoration: none;
-    z-index: 1;
-    overflow: hidden;
+  color: white;
+  position: relative;
+  font-family: Roboto;
+  background: linear-gradient(to right, var(--button-bg-color), var(--button-bg-color2));
+  border: 2.4px solid var(--button-outline);
+  border-radius: 20px;
+  font-size: 20px;
+  padding: 20px 40px 20px 40px;
+  border-radius: 30px;
+  white-space: nowrap;
+  text-decoration: none;
+  z-index: 1;
+  overflow: hidden;
 }
 
 .connect-button::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0%;
-    height: 100%;
-    z-index: -1;
-    background: linear-gradient(var(--button-hv-color), var(--button-hv-color2));
-    transition: width 0.5s ease;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  z-index: -1;
+  background: linear-gradient(var(--button-hv-color), var(--button-hv-color2));
+  transition: width 0.5s ease;
 }
 
 .connect-button:hover::before {
-    width: 100%;
+  width: 100%;
 }

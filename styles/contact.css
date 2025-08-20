@@ -1,186 +1,199 @@
 .contact-section {
-    display: flex;
-    align-items: center;
-    scroll-margin-top: 100px;
+  display: flex;
+  align-items: center;
+  scroll-margin-top: 100px;
 }
 
 .contact-box {
-    display: flex;
-    position: relative;
-    height: clamp(600px, 70vh, 650px);
-    width: clamp(1000px, 90vw, 1200px);
-    background-color: var(--contact-box-color);
-    border-radius: 50px;
-    align-items: center;
-    margin: 0 auto;
-    border: solid;
-    border-color: var(--star-outline);
-    padding-right: 40px;
+  display: flex;
+  position: relative;
+  height: clamp(600px, 70vh, 650px);
+  width: clamp(1000px, 90vw, 1200px);
+  background-color: var(--contact-box-color);
+  border-radius: 50px;
+  align-items: center;
+  margin: 0 auto;
+  border: solid;
+  border-color: var(--star-outline);
+  padding-right: 40px;
 }
 
 .contact-descr {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    height: 100%;
-    padding: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
+  padding: 80px;
 }
 
 .contact-text {
-    font-size: 30px;
+  font-size: 30px;
 }
 
 .contact-form {
-    display: flex;
-    flex-direction: column;
-    padding: 100px 80px 20px 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 100px 80px 20px 10px;
 }
 
 .name,
 .email,
 .description {
-    border-radius: 20px;
-    border: none;
-    background-color: var(--box-color);
-    padding-top: 20px;
-    padding-bottom: 20px;
-    width: clamp(0px, 60vw, 400px);
-    padding-left: 20px;
-    margin-bottom: 20px;
-    font-family: Nunito;
-    font-size: 16px;
-    color: var(--black-text-color);
-    outline: none;
+  border-radius: 20px;
+  border: none;
+  background-color: var(--box-color);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: clamp(0px, 60vw, 400px);
+  padding-left: 20px;
+  margin-bottom: 20px;
+  font-family: Nunito;
+  font-size: 16px;
+  color: var(--black-text-color);
+  outline: none;
 }
 
 .name::placeholder,
 .email::placeholder,
 .description::placeholder {
-    color: var(--black-text-color);
-    opacity: 1;
+  color: var(--black-text-color);
+  opacity: 1;
 }
 
 
 .description {
-    height: clamp(200px, 80vh, 230px);
-    resize: none;
+  height: clamp(200px, 80vh, 230px);
+  resize: none;
 }
 
 .message-tab {
-    display: flex;
-    position: absolute;
-    width: clamp(80px, 45vw, 600px);
-    height: 88px;
-    border: 2.4px solid var(--star-outline);
-    border-radius: 14px;
-    background-color: var(--tab-color);
-    top: -20px;
-    left: -10px;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  position: absolute;
+  width: clamp(80px, 45vw, 600px);
+  height: 88px;
+  border: 2.4px solid var(--star-outline);
+  border-radius: 14px;
+  background-color: var(--tab-color);
+  top: -20px;
+  left: -10px;
+  align-items: center;
+  justify-content: center;
 }
 
 .connect-title {
-    color: var(--black-text-color);
-    font-family: Lobster Two;
-    font-size: 42px;
+  color: var(--black-text-color);
+  font-family: Lobster Two;
+  font-size: 42px;
 }
 
 .connect-highlight {
-    color: var(--intro-text-color);
+  color: var(--intro-text-color);
 }
 
 .contact-buttons {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 500px;
-    height: 60px;
-    border-radius: 24px;
-    border: 2.4px solid var(--button-bg-color);
-    background: linear-gradient(to right, var(--button-bg-color), var(--button-bg-color2));
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 500px;
+  height: 60px;
+  border-radius: 24px;
+  border: 2.4px solid var(--button-bg-color);
+  background: linear-gradient(to right, var(--button-bg-color), var(--button-bg-color2));
 }
 
 .contact-buttons img {
-    width: 52px;
-    height: 52px;
+  width: 52px;
+  height: 52px;
 }
 
 .contact-buttons .vertical-line {
-    width: 2.4px;
-    height: 62px;
-    background-color: var(--button-outline);
+  width: 2.4px;
+  height: 62px;
+  background-color: var(--button-outline);
 }
 
 .submit-button {
-    font-size: 20px;
-    position: relative;
-    display: flex;
-    padding: 15px 100px 15px 100px;
-    width: 100px;
-    justify-content: center;
-    align-items: center;
-    align-self: end;
-    cursor: pointer;
-    overflow: hidden;
-    z-index: 1;
+  font-size: 20px;
+  position: relative;
+  display: flex;
+  padding: 15px 100px 15px 100px;
+  width: 100px;
+  justify-content: center;
+  align-items: center;
+  align-self: end;
+  cursor: pointer;
+  overflow: hidden;
+  z-index: 1;
 }
 
 .submit-button::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0%;
-    height: 100%;
-    z-index: -1;
-    background: linear-gradient(var(--button-hv-color), var(--button-hv-color2));
-    transition: width 0.50s ease;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  z-index: -1;
+  background: linear-gradient(var(--button-hv-color), var(--button-hv-color2));
+  transition: width 0.50s ease;
 }
 
 .submit-button:hover::before {
-    width: 100%;
+  width: 100%;
 }
 
 .linkedin {
-    width: 10px;
-    height: 10px;
+  width: 10px;
+  height: 10px;
 }
 
 img.linkedin {
-    width: 35px;
-    height: 35px;
+  width: 35px;
+  height: 35px;
 }
 
 img.github {
-    width: 40px;
-    height: 40px;
+  width: 40px;
+  height: 40px;
 }
 
 img.resume {
-    width: 38px;
-    height: 38px;
+  width: 38px;
+  height: 38px;
 }
 
 img.code {
-    width: 43px;
-    height: 43px;
+  width: 43px;
+  height: 43px;
+}
+
+img.linkedin,
+img.github-icon,
+img.resume,
+img.code {
+  transition: 
+    filter 0.15s ease-in-out,
+    transform 0.15s ease-in-out;
 }
 
 img.linkedin:hover,
 img.github:hover,
 img.resume:hover,
 img.code:hover {
-  animation: float 2s ease-in-out infinite;
+  transform: scale(1.05);
+  filter: drop-shadow(0 0 3px #EBCA50)
+          drop-shadow(0 0 6px #c29cd9);
 }
 
 @keyframes float {
   0% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(-2.5px);
   }
+
   100% {
     transform: translateY(0);
   }

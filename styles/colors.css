@@ -1,29 +1,30 @@
 :root {
-    --header-color: white;
-    --header-line: #EAEAEA;
-    --tab-color: #FFFD89;
-    --tab-outline: #EBCA50;
-    --sticky-note-color: white;
-    --intro-text-color: #66a1cd;
-    --info-color: gray;
-    --gif-outline: white;
-    --experience-color: white;
-    --grid-line-color: #ddd;
-    --experience-text: #333344;
-    --exp-highlighted-text:#333344;
-    --box-color: #EAEAEA;
-    --contact-box-color: white;
-    --black-text-color: #333344;
-    --button-bg-color: #66a1cd;
-    --button-bg-color2: #C3B2E6;
-    --button-hv-color: #ccafe7;
-    --button-hv-color2: #80c8e5;
-    --button-outline: #629DCC;
-    --star-bg-color:#FFF6B7;
-    --star-outline:#EBCA50;
-    --bg-color: #D3BDFF;
-    --bg2-color: #F8D4F3;
-    --grey-highlight: #EAEAEA;
+  --header-color: white;
+  --header-line: #EAEAEA;
+  --tab-color: #FFFD89;
+  --tab-outline: #EBCA50;
+  --sticky-note-color: white;
+  --intro-text-color: #66a1cd;
+  --info-color: gray;
+  --gif-outline: white;
+  --experience-color: white;
+  --grid-line-color: #ddd;
+  --experience-text: #333344;
+  --exp-highlighted-text: #333344;
+  --box-color: #EAEAEA;
+  --contact-box-color: white;
+  --black-text-color: #333344;
+  --button-bg-color: #66a1cd;
+  --button-bg-color2: #C3B2E6;
+  --button-hv-color: #ccafe7;
+  --button-hv-color2: #80c8e5;
+  --button-outline: #629DCC;
+  --star-bg-color: #FFF6B7;
+  --star-outline: #EBCA50;
+  --bg-color: #D3BDFF;
+  --bg2-color: #F8D4F3;
+  --grey-highlight: #EAEAEA;
+  --glow-color: #EBCA50;
 }
 
 body.dark-mode {
@@ -46,9 +47,10 @@ body.dark-mode {
   --button-hv-color: #af7ec1;
   --button-hv-color2: #4b6fb1;
   --button-outline: #629DCC;
-  --star-bg-color:#262543;
-  --star-outline:#EBCA50;
+  --star-bg-color: #262543;
+  --star-outline: #EBCA50;
   --bg-color: #0D1B2A;
   --bg2-color: #3E2F5B;
   --grey-highlight: #EAEAEA;
+  --glow-color: #4b6fb1;
 }
