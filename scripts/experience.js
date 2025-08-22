@@ -1,29 +1,6 @@
-const expCardsInfo = [
-  {
-    title: "comfort quest",
-    img: "./img/experiences/projects1-img.png",
-    info: "Tools Used: Java, Java swing",
-    infoDesc: "A gui mini-game I built while learning Java. You play as a penguin friend helping a burnt-out chicken through fun mini-games: catching bananas, running in a library, and stacking clothes. Each unlocking a happy ending for chicken and a final ending once you finish all three.",
-    github: "./img/icons/github-icon.png",
-    date: "Aug-Dec 2024",
-  },
-  {
-    title: "tweet feed",
-    img: "./img/experiences/projects2-img.png",
-    info: "Tools Used: Java, Java swing",
-    infoDesc: "A Twitter-inspired prototype built with Python, Tkinter, and SQL. Features include posting, replying, retweeting, viewing tweet details, user search, and follower tracking. In a group of 3, I developed the core tweet features and designed the GUI.",
-    github: "./img/icons/github-icon.png",
-    date: "Aug-Dec 2024",
-  },
-  {
-    title: "events lottery app",
-    img: "./img/experiences/projects3-img.png",
-    info: "Tools Used: Java, Android Studio, XML, Firebase",
-    infoDesc: "Android app for managing events through a fair lottery system, built in a group of 6. Entrants can join lotteries, scan QR codes, get notified if selected, confirm attendance, and view event details. Organizers create events, run lotteries, send notifications, generate QR codes, and track participants on a map. I developed all admin features, core entrant functions (nav bar, join/leave, QR codes), and designed + coded the UI.",
-    github: "./img/icons/github-icon.png",
-    date: "Aug-Dec 2024",
-  }
-]
+import { projectCardsInfo } from "./data/projects-data.js";
+import { activitiesCardsInfo } from "./data/activities-data.js";
+import { studiesCardsInfo } from "./data/studies-data.js";
 
 setUpListeners();
 
@@ -69,14 +46,14 @@ function setUpListeners() {
 function changeContent(button) {
   /* Changes the content of the experience boxes to desired image */
   button.classList.add('toggle-on');
-  experience = (button.innerText).toLowerCase();
-  exp_buttons = [
+  const experience = (button.innerText).toLowerCase();
+  const exp_buttons = [
     document.querySelector('.js-project-button'),
     document.querySelector('.js-club-button'),
     document.querySelector('.js-cert-button')
   ]
 
-  expImages = document.querySelector(".exp-images");
+  const expImages = document.querySelector(".exp-images");
 
   // ensure only one button is toggled at a time
   for (let exp_button of exp_buttons) {
@@ -89,7 +66,7 @@ function changeContent(button) {
   const expConfig = {
     projects: 3,
     activities: 3,
-    certificates: 1,
+    studies: 3,
   }
 
   const count = expConfig[experience];
@@ -99,6 +76,16 @@ function changeContent(button) {
   let expCardHTML = "";
 
   for (let i = count; i >= 1; i--) {
+    let expCardsInfo = []
+
+    if (experience == "projects") {
+      expCardsInfo = projectCardsInfo;
+    } else if (experience == "activities") {
+      expCardsInfo = activitiesCardsInfo;
+    } else {
+      expCardsInfo = studiesCardsInfo;
+    }
+
     console.log(expCards)
     expCardHTML += `
       <div class="exp-cards">
@@ -113,8 +100,8 @@ function changeContent(button) {
                 <p class="exp-info-text">${expCardsInfo[i - 1].infoDesc}</p>
 
                 <div class="exp-card-extra-info">
-                  <a href="https://github.com/angelcache/chicken-gui" target="_blank" rel="noopener noreferrer">
-                    <img src="${expCardsInfo[i - 1].github}" alt="github icon">
+                  <a href="${expCardsInfo[i - 1].link}" target="_blank" rel="noopener noreferrer">
+                    <img src="${expCardsInfo[i - 1].icon}" alt="link icon">
                   </a>
                   <p>${expCardsInfo[i - 1].date}</p>
                 </div>
