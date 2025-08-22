@@ -1,6 +1,6 @@
 import { projectCardsInfo } from "./data/projects-data.js";
 import { activitiesCardsInfo } from "./data/activities-data.js";
-import { certificatesCardsInfo } from "./data/certificates-data.js";
+import { studiesCardsInfo } from "./data/studies-data.js";
 
 setUpListeners();
 
@@ -66,7 +66,7 @@ function changeContent(button) {
   const expConfig = {
     projects: 3,
     activities: 3,
-    certificates: 1,
+    studies: 3,
   }
 
   const count = expConfig[experience];
@@ -83,7 +83,7 @@ function changeContent(button) {
     } else if (experience == "activities") {
       expCardsInfo = activitiesCardsInfo;
     } else {
-      expCardsInfo = certificatesCardsInfo;
+      expCardsInfo = studiesCardsInfo;
     }
 
     console.log(expCards)
@@ -100,8 +100,8 @@ function changeContent(button) {
                 <p class="exp-info-text">${expCardsInfo[i - 1].infoDesc}</p>
 
                 <div class="exp-card-extra-info">
-                  <a href="https://github.com/angelcache/chicken-gui" target="_blank" rel="noopener noreferrer">
-                    <img src="${expCardsInfo[i - 1].github}" alt="github icon">
+                  <a href="${expCardsInfo[i - 1].link}" target="_blank" rel="noopener noreferrer">
+                    <img src="${expCardsInfo[i - 1].icon}" alt="link icon">
                   </a>
                   <p>${expCardsInfo[i - 1].date}</p>
                 </div>
