@@ -64,7 +64,7 @@ function changeContent(button) {
 
   // change images
   const expConfig = {
-    projects: 3,
+    projects: 7,
     activities: 3,
     studies: 3,
   }

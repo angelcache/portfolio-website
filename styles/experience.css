@@ -60,6 +60,7 @@
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 45px;
   padding-top: 50px;
+  row-gap: 60px;
 }
 
 .star-menu2 {

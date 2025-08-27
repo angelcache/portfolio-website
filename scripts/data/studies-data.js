@@ -10,7 +10,7 @@ export const studiesCardsInfo = [
   },
   {
     title: "the odin project",
-    img: "./img/experiences/studies2-img.png",
+    img: "./img/experiences/cards/landing-page.png",
     info: "Skills Gained: HTML, CSS, Javascript, React",
     infoDesc: "Ongoing coursework covering core front-end development. Gaining hands-on experience with responsive layouts, DOM manipulation, and clean UI design. Each milestone includes a project, ranging from small games to full sites, that builds toward full-stack skills.",
     icon: "./img/icons/link-icon.png",
@@ -19,7 +19,7 @@ export const studiesCardsInfo = [
   },
   {
     title: "computing science degree",
-    img: "./img/experiences/studies3-img.png",
+    img: "./img/experiences/cards/lab.png",
     info: "Focus: AI and Software Development",
     infoDesc: "Pursuing a B.Sc. in Computing Science at the University of Alberta, with foundations in algorithms, databases, AI, UI design, and web development. Coursework includes hands-on projects in software engineering and system design. Highlighted courses: Algorithms, Databases, Machine Learning, Software Engineering, AI, and Web Applications.",
     icon: "./img/icons/link-icon.png",
