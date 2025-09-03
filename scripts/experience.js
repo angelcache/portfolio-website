@@ -3,6 +3,7 @@ import { activitiesCardsInfo } from "./data/activities-data.js";
 import { studiesCardsInfo } from "./data/studies-data.js";
 
 setUpListeners();
+changeContent(document.querySelector(".js-project-button"));
 
 function setUpListeners() {
   let target = null;
@@ -10,7 +11,8 @@ function setUpListeners() {
   const overlay = document.querySelector(".overlay");
 
   experienceButtons.forEach(button => {
-    button.addEventListener("click", (e) => changeContent(e.target))
+    button.addEventListener("click", (e) =>
+      changeContent(e.target))
   })
 
   document.querySelectorAll(".exp-images a").forEach(link => {
@@ -86,7 +88,6 @@ function changeContent(button) {
       expCardsInfo = studiesCardsInfo;
     }
 
-    console.log(expCards)
     expCardHTML += `
       <div class="exp-cards">
           <div id="js-box-${i}" class="exp-card">
@@ -94,7 +95,11 @@ function changeContent(button) {
               ${expCardsInfo[i - 1].title}
             </div>
             <div class="exp-card-info">
-              <img src="${expCardsInfo[i - 1].img}" alt="">
+              ${experience === "projects" ?
+                `<video src="${expCardsInfo[i - 1].img}" autoplay loop muted playsinline></video>`:
+                `<img src="${expCardsInfo[i - 1].img}" alt="">`
+              }
+              
               <div class="text">
                 <p class="exp-info-tools">${expCardsInfo[i - 1].info}</p>
                 <p class="exp-info-text">${expCardsInfo[i - 1].infoDesc}</p>
@@ -105,8 +110,8 @@ function changeContent(button) {
                   </a>
                   <p>${expCardsInfo[i - 1].date}</p>
                 </div>
-                <p class="last-exp">&lt</p>
-                <p class="next-exp">&gt</p>
+                <!--<p class="last-exp">&lt</p>-->
+                <!--<p class="next-exp">&gt</p>-->
                 <p class="exit">X</p>
               </div>
             </div>

@@ -1,7 +1,7 @@
 export const projectCardsInfo = [
   {
     title: "comfort quest",
-    img: "./img/experiences/projects1-img.png",
+    img: "./img/experiences/cards/video/chicken-game.mp4",
     info: "Tools Used: Java, Swing",
     infoDesc: "A gui mini-game I built while learning Java. You play as a penguin friend helping a burnt-out chicken through fun mini-games: catching bananas, running in a library, and stacking clothes. Each unlocking a happy ending for chicken and a final ending once you finish all three.",
     icon: "./img/icons/github-icon.png",
@@ -9,7 +9,7 @@ export const projectCardsInfo = [
   },
   {
     title: "tweet feed",
-    img: "./img/experiences/projects2-img.png",
+    img: "./img/experiences/cards/video/tweet.mp4",
     info: "Tools Used: Python, Tkinter, SQL, MongoDB",
     infoDesc: "A Twitter-inspired prototype built with Python Tkinter, and SQL. Features include posting, replying, retweeting, viewing tweet details, user search, and follower tracking. In a group of 3, I developed the core tweet features and designed the GUI. We also created two versions of the app: one using SQL and another using MongoDB for database management.",
     icon: "./img/icons/github-icon.png",
@@ -17,24 +17,15 @@ export const projectCardsInfo = [
   },
   {
     title: "events lottery app",
-    img: "./img/experiences/projects3-img.png",
+    img: "./img/experiences/cards/video/event.mp4",
     info: "Tools Used: Java, Android Studio, XML, Firebase",
     infoDesc: "Android app for managing events through a fair lottery system, built in a group of 6. Entrants can join lotteries, scan QR codes, get notified if selected, confirm attendance, and view event details. Organizers create events, run lotteries, send notifications, generate QR codes, and track participants on a map. I developed all admin features, core entrant functions (nav bar, join/leave, QR codes), and designed + coded the UI.",
     icon: "./img/icons/github-icon.png",
     date: "Aug-Dec 2024",
   },
   {
-    title: "project humanity",
-    img: "./img/experiences/cards/portfolio.png",
-    info: "Tools Used: HTML, CSS, Javascript, React",
-    infoDesc: "A sci-fi themed escape room game built with React and JavaScript. Players explore a mysterious alien experiment lab, progressing by solving interactive puzzles with custom assets and illustrations. Currently in development, with visuals nearly completed and mechanics still being implemented.",
-    icon: "./img/icons/github-icon.png",
-    link: "",
-    date: "July-Present 2025",
-  },
-  {
     title: "this portfolio",
-    img: "./img/experiences/cards/portfolio.png",
+    img: "./img/experiences/cards/video/portfolio.mp4",
     info: "Tools Used: HTML, CSS, Javascript",
     infoDesc: "A personal portfolio website built with HTML, CSS, and JavaScript to showcase my projects, skills, and experiences. It features interactive project cards and smooth animations, with a clean design that highlights both my technical skills and personal style.",
     icon: "./img/icons/github-icon.png",
@@ -42,17 +33,26 @@ export const projectCardsInfo = [
     date: "May-Sept 2025",
   },
   {
-    title: "odin project portfolio",
-    img: "./img/experiences/cards/odin-portfolio.png",
-    info: "Tools Used: HTML, CSS, JavaScript",
-    infoDesc: "The Odin Project is a free, open-source curriculum for learning full-stack web development through self-paced modules and hands-on projects. As part of the Foundations and early Frontend path, I have completed six core projects: a landing page, a Rock-Paper-Scissors game, a Sketching app, a Calculator, an Admin Dashboard, and a Library app. This portfolio page currently showcases the Admin Dashboard as a placeholder until I build the final Odin Project portfolio site.",
+    title: "project humanity",
+    img: "./img/experiences/cards/video/escape-room.mp4",
+    info: "Tools Used: HTML, CSS, Javascript, React",
+    infoDesc: "A sci-fi themed escape room game built with React and JavaScript. Players explore a mysterious alien experiment lab, progressing by solving interactive puzzles with custom assets and illustrations. Currently in development, with visuals nearly completed and mechanics still being implemented.",
     icon: "./img/icons/github-icon.png",
-    link: "https://github.com/your-username/odin-project",
-    date: "2025"
+    link: "",
+    date: "July-Present 2025",
+  },
+  {
+    title: "odin project portfolio",
+    img: "./img/experiences/cards/video/odin.mp4",
+    info: "Tools Used: HTML, CSS, JavaScript",
+    infoDesc: "The Odin Project is a free, open-source curriculum for learning full-stack web development through self-paced modules and hands-on projects. As part of the Foundations and early Frontend path, I have completed six core projects: a landing page, a Rock-Paper-Scissors game, a Sketching app, a Calculator, an Admin Dashboard, and a Library app.",
+    icon: "./img/icons/github-icon.png",
+    link: "https://github.com/angelcache/odin-portfolio",
+    date: "June-Present 2025"
   },
   {
     title: "mswua website",
-    img: "./img/experiences/cards/portfolio.png",
+    img: "./img/experiences/cards/video/mswua.mp4",
     info: "Tools Used: HTML, CSS, Typescript, React",
     infoDesc: "Designed and developed the official Mission SpaceWalker (MSWUA) website to showcase the team’s projects, events, and outreach initiatives. The site improves visibility for sponsors, collaborators, and new members, with a modern, responsive design, intuitive navigation, and visuals that capture the club’s space exploration theme.",
     icon: "./img/icons/github-icon.png",

@@ -175,3 +175,8 @@
   animation-timeline: view();
   animation-range: entry 0% entry 100%;
 }
+
+video {
+  width: 400px;
+  height: auto;
+}
